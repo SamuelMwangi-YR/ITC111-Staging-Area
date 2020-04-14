@@ -1,7 +1,8 @@
-<DOCKTYPE html>
+<DOCTYPE html>
 <html>
- </head>
- <body>
-  <h1> New Landing Page<h1>
+  <head>
+  </head>
+  <body>
+    <h1> New Landing Page</h1>
   </body>
- </html>
+</html>
