@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Class Exercise 05a</title>
+<style>
+ul {
+background-color: #333333;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+li, a {
+display: block;
+color: white;
+padding: 16px;
+}
+li a:hover{
+background-color: #111111;
+}
+li {
+float: left;
+}
+#outerDiv {
+margin: 0 auto;
+width: 75%;
+overflow: hidden;
+}
+#innerDivBodyLeft, #innerDivBodyRight{
+float:left;
+height: 500px;
+}
+#innerDivBodyLeft{
+background-color: cadetblue;
+width: 20%;
+}
+#innerDivBodyRight{
+background-color: blue;
+width: 80%;
+}
+
+</style>
+<script>
+    function changeLinkText(){
+        document.getElementById('divLeft').innerHTML = '<a href="#" onclick="changeDivRightText("link1")">Link 1a</a>\n<a href="#" onclick="changeDivRightText\"link2")">Link 1b</a>';
+        document.getElementById('divRight').innerHTML = 'Content for the "Link 1" link.';
+        document.getElementById('divRight').style.color = 'red';
+    }
+    function changeDivRightText(txt){
+    if(txt == 'link1') {
+    document.getElementById('divRight').innerHTML = 'Content from Link 1a';
+    } else if (txt == 'link2') {
+    document.getElementById('divRight').innerHTML = 'Content from Link 1b';
+    } else {
+    document.getElementById('divRight').innerHTML = 'Content loaded when default link is clicked';
+    }
+    document.getElementById('innerDivBodyLeft').innerHTML = '<a href="#" onclick="newFunction()"> New Link</a>';
+    document.getElementById('innerDivBodyRight').innerHTML = "Some New Text";
+    }
+</script>
+</head>
+<body>
+<div id='outerDiv'>
+<div>
+<ul>
+<li>
+<a href="#" onclick="changeLinkText()">Link 1</a>
+</li>
+<li>
+<a href="#">Link 2</a>
+</li>
+</ul>
+</div>
+<div id='innerDivBodyLeft'>
+    <a href="#" id="divLeft"> Link</a>
+</div>
+<div id='innerDivBodyRight'>
+<p id='textDivRight'>Content goes here when link is clicked</p>
+</div>
+</div>
+</body>
+</html>
