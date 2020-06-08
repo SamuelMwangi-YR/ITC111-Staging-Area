@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cstyles.css">
+</head>
+<body>
+    <div class="main">
+<!--top most display-->
+    <div>
+<!--main display-->
+        <p id="display1"></p>
+    </div>
+    <div>
+        <input type="text" id="display2">
+    </div>
+<!--button rows-->
+    <div class="row">
+        <button type="submit" value="s" name="sqrt" onclick="set0p(this)">&radic;</button>
+        <button type="submit" value="p" name="pow"  onclick="set0p(this)">X&sup2;</button>
+        <button type="submit" value="a" name="delete" onclick="delFrontRight()">⌫</button>
+        <button type="submit" value="/" name="divide" onclick="set0p(this)">/</button>
+    </div>
+    <div class="row">
+        <button type="submit" value="7" name="seven" onclick="loadDisplay(this)">7</button>
+        <button type="submit" value="8"name="eight"  onclick="loadDisplay(this)">8</button>
+        <button type="submit" value="9" name="nine"  onclick="loadDisplay(this)">9</button>
+        <button type="submit" value="*" name="multiply"  onclick="set0p(this)">*</button>
+    </div>
+    <div class="row">
+        <button type="submit" value="4" name="four"  onclick="loadDisplay(this)">4</button>
+        <button type="submit" value="5"name="five"   onclick="loadDisplay(this)">5</button>
+        <button type="submit" value="6" name="six"  onclick="loadDisplay(this)">6</button>
+        <button type="submit" value="-" name="minus"  onclick="set0p(this)">-</button>
+    </div>
+    <div class="row">
+        <button type="submit" value="1" name="one" onclick="loadDisplay(this)">1</button>
+        <button type="submit" value="2"name="two"  onclick="loadDisplay(this)">2</button>
+        <button type="submit" value="3" name="three" onclick="loadDisplay(this)">3</button>
+        <button type="submit" value="+" name="addition" onclick="set0p(this)">+</button>
+    </div>
+    <div class="row">
+        <button type="submit" value="C" name="clear" onclick="clearDisplay()">C</button>
+        <button type="submit" value="0"name="0"   onclick="loadDisplay(this)">0</button>
+        <button type="submit" value="." name="point" onclick="loadDisplay(this)">.</button>
+        <button type="submit" value="=" name="equals" onclick="doMath()">=</button>
+    </div>
+    </div>
+   <script src="Cscripts.js"></script> 
+</body>
+</html>
