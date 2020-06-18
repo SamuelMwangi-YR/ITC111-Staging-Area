@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flash Card</title>
+    <link rel="stylesheet" href="FCstyles.css">
+</head>
+<body>
+    <div id="main" class="center">
+<!--Header Section Start-->
+        <header>
+            <h3 class="center">Flash Card</h3>
+        </header>
+<!--Header Section End-->
+
+<!--Cartegory Selector Start-->
+        <section id="chooseCat" class="center margin">
+            <select id="category" onchange="chgList(this)">
+                <option value="greetings">Greetings</option>
+                <option value="bodyParts">Body Parts</option>
+                <option value="colors">Colors</option>
+            </select>
+        </section>
+<!--Cartegory Selector End-->
+
+<!--Image Display Start-->
+    <section id="targetImg" class="center margin"> 
+        <img src="" alt="">
+        <div id="wrd" class="trgWrd"></div>
+    </section>
+<!--Image Display End-->
+
+<!--Flash Button Start-->
+    <section id="pagination" class="center margin">
+        <a href="#">
+            <section id="prevWord" class="pgBtn center margin">
+                <p id="prev" onclick="prvWord()"><<</p>
+            </section>
+        </a>
+        <a href="#">
+            <section id="flipWord" class="pgBtn center margin">
+                <p id="flip" onclick="flipWord()">flip</p>
+            </section>
+        </a>
+        <a href="#">
+            <section id="nextWord" class="pgBtn center margin">
+                <p id="next" onclick="nxtWord()">>></p>
+            </section>
+        </a>
+    </section>
+<!--Flash Button End-->
+
+<!--Language Section Start-->
+    <section id="swapLangBtn" class="center margin">
+        <select id="category" onchange="setList(this)">
+            <option value="English">English</option>
+            <option value="Swahili">Swahili</option>
+        </select>
+    <input id="swapBtn" type="button" value="<=>" onclick="swapTarget()">
+        <select id="category" onchange="setList(this)">
+            <option value="English">English</option>
+            <option value="Swahili">Swahili</option>
+        </select>
+    </section>
+<!--Language Section End-->
+    </div>
+    <script src="FCapp.js"></script>
+</body>
+</html>
