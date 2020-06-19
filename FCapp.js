@@ -1,14 +1,14 @@
 // Word list arrays
 
 // English Lists
-var greetings_En = ["Hello","How are you?","What\'s up?","Nice to meet you."];
+var greetings_En = ["Hello","How are you?","What's up?","Nice to meet you."];
 var bodyParts_En = ["head","chest","back","arm","leg"];
 var colors_En = ["red","orange","yellow","green","blue","indigo"];
 
 // Swahili Lists
-var greetings_Sw = ["Hibari","Hibari gani?","Kuna Nini?","Ni yema kukutana na wewe."];
+var greetings_Sw = ["Habari","Habari gani?","Kuna Nini?","Ni njema kukutana na wewe."];
 var bodyParts_Sw = ["kichwa","kifua","mgongo","mkono","mguu"];
-var colors_Sw = ["nyekunu","chungwa","manjano","kijani","bluu","bluu ya kati"];
+var colors_Sw = ["nyekundu","chungwa","manjano","kijani","Samawati","bluu ya kati"];
 
 // variable to display current word 
 var word = document.getElementById("wrd");
